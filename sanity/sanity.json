@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "Sanity Minimal Starter"
-  },
   "api": {
-    "projectId": "8hj1t7km",
+    "projectId": "htnr8xkf",
     "dataset": "production"
+  },
+  "project": {
+    "name": "astro-demo"
   },
   "plugins": [
     "@sanity/base",
