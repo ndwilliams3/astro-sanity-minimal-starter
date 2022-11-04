@@ -5,18 +5,11 @@ export interface Props {
 
 const {narrow} = Astro.props;
 ---
-
-<div class:list={["container", `content__container ${narrow && `content__container--narrow`}`]}>
+<section class="section px-4">
+<div class:list={["container px-5 py-24 mx-auto", `${narrow && `md:max-width-4xl`}`]}>
   <slot></slot>
 </div>
-
+</section>
 <style>
-.content__container {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  padding: var(--container-padding);
-}
-.content__container--narrow {
-  max-width: var(--container-max-width-narrow);
-}
+
 </style>

@@ -18,12 +18,12 @@ const allPostData = await getAllPosts();
 
 <Layout seo={seo}>
   <Container>
-    <article class="blog-page-content__article">
-      <section class="postlist">
+    <div class="flex flex-wrap -m-4">
+  
         {allPostData.map((post) =>
         <BlogPostPreview post={post} />)}
-      </section>
-    </article>
+    
+</div>
   </Container>
 </Layout>
 
